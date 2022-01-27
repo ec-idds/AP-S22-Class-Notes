@@ -3,6 +3,7 @@
 These are the notes from a directed study course in "Advanced Programming," written and maintained by:
 
 * Mark Sherman <shermanm@emmanuel.edu>
+* McKenzie Leahy <leahym@emmanuel.edu>
 
 **Table of Contents**
 <!--ts-->
