@@ -39,7 +39,36 @@ Don't worry about the Table of Contents- I'll update that when I merge your chan
 
 
 # Session 1 - January 20
-fill in pls
+* Programming Paradigms 
+* Paradigm- categories/ classes of language features that define how a language is organizes and what it can do 
+* In intro to programming you were taught one paradigm of 'imperative programming' which includes global state variables, and explicit sequence of commands that update state. 
+* Paradigms often overlap ex. all languages have the ability to make variables 
+* JavaScript is a 'multiparadigm' language, so any paradigm style is appropriate 
+* Well known paradigms 
+* Functional (applicative) programming 
+	* Functions are a 'first class' data type 
+	* When determining if the code is functional, ask yourself can a function be assigned to a variable? If yes, then it is functional code. 
+	* Languages that are functional: JavaScript, Python (limited), Scheme, Lisp, Haskell 
+	* Languages that are NOT functional: C, C++, Java
+* Object Oriented (OO)
+	* Organizes code into objects, uses instances 
+	* Instance- is what actually runs, contains real data and can run functions 
+	* Can make many different instances, and each separate instance will have the same structure, but are unique and can have different data.
+	* Classes can have a structure of its parent class, but is a new class, and can inherit other things  
+	* Maintains a strict organization, slower to write 
+* Functional programming is faster to make a product 
+* Object Oriented is harder to break, used for bigger problems 
+* Organized Languages 
+	* Compiled and dynamic: pretty much doesn't exist, compiled programs are pre-optimized and cannot change dynamically 
+	* Interpretted and dynamic: JavaScript, Ada, Small Talk, Lisp, Scheme, Scratch 
+	* Compiled and static: 'bread and butter' C, C++, Rust, OO
+	* Interpretted and static: 'possibly rare' if you are already using an interpreter might as well go dynamic for more power
+* Speed of different languages 
+	* FAST (hard to write): Assembly, C, C++ 
+	* AVERAGE: Java, Python
+	* SLOW (easy to write): JavaScript (code running other code)
+* Golden Rule
+	* As programmers we want to write our code in the easiest language possible, until we need to make it faster.  
 
 # Session 2 - January 25
 
