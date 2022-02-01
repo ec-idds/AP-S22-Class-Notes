@@ -13,8 +13,10 @@ These are the notes from a directed study course in "Advanced Programming," writ
    * [Session 2 - January 25](#session-2---january-25)
       * [Chapter 1 - Values](#chapter-1---values)
       * [Chapter 2 - Program Structure](#chapter-2---program-structure)
+   * [Session 3 - January 27](#session-3---january-27)
+      * [Chapter 3 - Functions](#chapter-3---functions)
 
-<!-- Added by: shermanm, at: Tue Jan 25 18:15:13 EST 2022 -->
+<!-- Added by: shermanm, at: Tue Feb  1 16:58:13 EST 2022 -->
 
 <!--te-->
 # Instructions
