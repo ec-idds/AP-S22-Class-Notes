@@ -96,6 +96,10 @@ These notes are the highlights, focusing on what is new information beyond what 
 
 * Some History of Programming
 	* Grace Hopper
+		* Videos on Grace Hopper 
+		* https://www.youtube.com/watch?v=QA33wW5LaNY4
+		* https://www.youtube.com/watch?v=1LR6NPpFxw4
+		* https://www.youtube.com/watch?v=Fg82iV-L8ZY
 	* Ada Lovelace
 		* Charles Babbage
 	* Grace Hopper's literal "bug"
