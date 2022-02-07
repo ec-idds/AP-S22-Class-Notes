@@ -13,8 +13,10 @@ These are the notes from a directed study course in "Advanced Programming," writ
    * [Session 2 - January 25](#session-2---january-25)
       * [Chapter 1 - Values](#chapter-1---values)
       * [Chapter 2 - Program Structure](#chapter-2---program-structure)
+   * [Session 3 - January 27](#session-3---january-27)
+      * [Chapter 3 - Functions](#chapter-3---functions)
 
-<!-- Added by: shermanm, at: Tue Jan 25 18:15:13 EST 2022 -->
+<!-- Added by: shermanm, at: Tue Feb  1 16:58:13 EST 2022 -->
 
 <!--te-->
 # Instructions
@@ -105,3 +107,22 @@ These notes are the highlights, focusing on what is new information beyond what 
 	* Grace Hopper's literal "bug"
 	* Alan Turing
 
+# Session 3 - January 27
+
+We went over some of chapter 3 and worked on environment diagrams
+
+## Chapter 3 - Functions 
+
+* Functions 
+	* expressions you can apply to a set of inputs 
+	* maps the input to the correct output
+	* `const` and `let` are used to bind to the block they are declared in 
+	* a function doesn't always apply a name or binding to something, it can or does not need to
+		* this returns the return value by skipping the name
+	* functions are a value type 
+	* when the function is the first word used on a new line it gets hoisted to the top of the list and it becomes a global function
+	* the `=` allows for you to have all the control of where the function is, if you don't use the `=` then it gets moved to the top 
+
+* Environment diagrams or memory diagrams 
+	* when you make a binding it re-assigna the value as the old one gets deleted  
+	* everything without an arrow back to the global will get deleted 
