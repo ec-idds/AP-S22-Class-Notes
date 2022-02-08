@@ -98,6 +98,10 @@ These notes are the highlights, focusing on what is new information beyond what 
 
 * Some History of Programming
 	* Grace Hopper
+		* Videos on Grace Hopper 
+		* https://www.youtube.com/watch?v=QA33wW5LaNY4
+		* https://www.youtube.com/watch?v=1LR6NPpFxw4
+		* https://www.youtube.com/watch?v=Fg82iV-L8ZY
 	* Ada Lovelace
 		* Charles Babbage
 	* Grace Hopper's literal "bug"
@@ -122,3 +126,26 @@ We went over some of chapter 3 and worked on environment diagrams
 * Environment diagrams or memory diagrams 
 	* when you make a binding it re-assigna the value as the old one gets deleted  
 	* everything without an arrow back to the global will get deleted 
+# Session 4 - February 1 
+## Chapter 3 Cont. 
+* Arrow function 
+	* "=>" fat arrow, operator, syntax choice 
+	* Used to point at the body of that function, applies body to the arguments of a function 
+	* Allows for one off functions very quickly 
+	* Can get rid of "return" in the body if there is only one body parameter 
+* Call Stack 
+	* When you call a function, it goes somewhere else to execute the function, and then it comes back to "return" a value of the function 
+	* "Return" returning from previous contex 
+	* Call stack is a piece of data in memory that keeps track of all the ins-and-outs 
+	* Goal is to keep empyting 
+	* Functions compile on top of each other until they are returned, and then the program will revert back to the beginning 
+	* Control of the function can only be in one place at a time 
+	* Some languages do not have callback, they go to the function and can never leave 
+	* Callstack = breadcrumbs 
+	* There is only one call stack 
+	* The call stack will do one thing at a time, but marks where in the code it was as the code jumps around to execute the code, it keeps order 
+* Call Stack Tiny People Analogy 
+	* In a function, a tiny person comes out and takes the arguments of the function and places the arguments in their pockets 
+	* The tiny person then goes and uses the arguments to exchange for the value of the function 
+	* The same tiny person then hands the value from the functions back to the original tiny person that gave them the arguments 
+	* This act of returning the value is important so then the other code can resume
