@@ -15,8 +15,10 @@ These are the notes from a directed study course in "Advanced Programming," writ
       * [Chapter 2 - Program Structure](#chapter-2---program-structure)
    * [Session 3 - January 27](#session-3---january-27)
       * [Chapter 3 - Functions](#chapter-3---functions)
+   * [Session 4 - February 1](#session-4---february-1)
+      * [Chapter 3 Cont.](#chapter-3-cont)
 
-<!-- Added by: shermanm, at: Tue Feb  1 16:58:13 EST 2022 -->
+<!-- Added by: shermanm, at: Tue Feb  8 16:47:57 EST 2022 -->
 
 <!--te-->
 # Instructions
