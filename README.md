@@ -151,3 +151,29 @@ We went over some of chapter 3 and worked on environment diagrams
 	* The tiny person then goes and uses the arguments to exchange for the value of the function 
 	* The same tiny person then hands the value from the functions back to the original tiny person that gave them the arguments 
 	* This act of returning the value is important so then the other code can resume
+
+# Session 6 - February 8
+
+Closures demonstration code:
+```JavaScript
+function setup() {
+  createCanvas(400, 400);
+  
+  
+  let makeMultiplier = function (n) {
+    return function (b) {
+      return b * n;
+    }
+  }
+  
+  let tripler = makeMultiplier(3);
+  
+  print(tripler(2));
+  print(tripler(5));
+  
+  let quad = makeMultiplier(4);
+  
+  print(quad(2));
+}
+```
+
