@@ -149,3 +149,91 @@ We went over some of chapter 3 and worked on environment diagrams
 	* The tiny person then goes and uses the arguments to exchange for the value of the function 
 	* The same tiny person then hands the value from the functions back to the original tiny person that gave them the arguments 
 	* This act of returning the value is important so then the other code can resume
+* Recursion 
+* https://www.youtube.com/watch?v=YZcO_jRhvxs
+	* recursion is another way to do repetition 
+	* looping is one way to do repetition 
+	* thus recursion is another way to do looping 
+	* the recursion part of a function is often hidden within another function 
+	* In a recursion function, you can add in another function to create a hardwired start property/ value 
+	* Groundhog Day metaphor
+	* You change the arguments to have the most updated information for next time it runs 
+	* the callstack tracks state 
+* Functional Programming 
+	* first type of programming designed in the 60s
+	*  It evolved a lot sooner, was mathematically pure 
+	*  then computers evolved the first time, and FP became obsolete 
+	*  Once computers evolved again and became astronomically better, FP came back intro fruition 
+* Two main properties/ pillars of FP 
+	* 1.) Can stop somewhere in the code and resume it later 
+	* 2.) Stay away from state variables, as FP is looking to reduce the mess they cause 
+* Making change example for recursion 
+	* If you start out with different coins, to make one dollar, the combination of change will vary 
+	* This represents recursion, as different decisions are being made, and all of them play out to solution 
+* Recursion is seen in GPS systems and classical AI trainings 
+# Session 5 - February 8 
+## Chapter 4 - Mutability 
+* every value is mutable 
+* mutable = changeable, maluable, moveable 
+* relies on the concept of change through making an entire new one (new binding) and throwing away the other one 
+* Two things can happen to the "old" item 
+	* 1.) something else points at it or not 
+	* 2.) if not pointed at, the garbage collector will take it away 
+* In javaScript you never explicitely delete anything 
+* computers are not inherently mutable 
+* mutable data is messy and unpredictable 
+* immutable data is what it is, and if you need a new one, you make it 
+* over time no piece of data will ever change, because it cannot change 
+* you can change bindings, but the actual data never changes 
+* objects actually do change, because they have a lot of things within them 
+* functions- pay attention to code terms 
+* objects - pay attention to data terms 
+* Closure: you create a function with data already in it (makeMultiplier example) 
+	* closure ensures that you do not fall into changing numbers that you did not mean to change 
+* Parallelism 
+	* needed so FP can come back 
+	* when you have parallelism, JS is always in one place, only doing one thing at a time 
+	* ex. "Google Search" works across mutliple computers 
+* Why FP works well with parallel systems 
+	* 1.) immutable data: it tracks your changes across machines 
+	* 2.) no global state, each machine is its own "global" state, and the variables do not maintain the same in each "global" system 
+* state variables are very messy 
+* communication between nodes is the hardest part 
+* parallelization is useful in hardware failure and if you need to reboot/ update a node 
+* node: a server/ computer 
+## February 10 
+* Arrays: reduce, map, filter 
+* reduce (higher order procedure): to accumulate all of the items in an array together
+	* syntax: array name . reduce((total, num), start value)
+* higher order function 
+	* function that has to operate on other functions 
+	* requires a function to be passed into it 
+	* functions that talk to other functions 
+	* functions are first class in JS, but not in all languages 
+* MAP: makes a new array after applying opertions to the original array's values to form a new array 
+	* puts the value in the original array at any time, and returns that value in its new array 
+	* syntax: original array name. map((x) => whatever you want to do to the value) 
+* Filter: akin to map, as it makes a new array but only includes some elements 
+	* needs to test to decide whether to keep or ignore, makes things into a boolean 
+	* syntax: array name . filter((x) => parameters of what variables you want included) 
+* When reduce, map, and filter are used altogether, they help multiple things happen at once 
+# TERMS 
+* Paradigm: classes of language concepts and features that usually revolve around a central philosophy, an organizational tool to understand a collection of features 
+* Functional Programming: (applicative) functions are "first-class" data type, passed as arguments and returned 
+* Object-Oriented Programming: all code is organized into objects 
+* Bits: any kind of two-value things, usually described as 1s and 0s 
+* Values: chunks of bits ex. numbers, text, functions
+* Overflow: end up with a number that did not fit into the given number of bits 
+* Operators: +, *, -, /, %, >, <, >=, <=, ==, !=, &&, ||, ! 
+* Unicode standard: assigns a number to virtually every character you would ever need 
+* Boolean: which has just two values, true and false 
+* Null and Undefined: denote the absence of meaningful value 
+* Expression: fragment of code that produces a value 
+* JS statement: full statement, compilation of expressions 
+* Program: list of statments 
+* Side effects: values of expressions that do not change the world 
+* Variable: catches and holds values 
+* Binding: creation of a variable to its value, = can be used to assign new values to a binding 
+* Environment: collection of bindings and their values that exist at a given time 
+* Function: piece of program wrapped in a value, have a set of parameters and a body, which maintains the statements to execute 
+* Arguments: values given to functions 
