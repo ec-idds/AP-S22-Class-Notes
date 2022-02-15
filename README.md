@@ -17,8 +17,13 @@ These are the notes from a directed study course in "Advanced Programming," writ
       * [Chapter 3 - Functions](#chapter-3---functions)
    * [Session 4 - February 1](#session-4---february-1)
       * [Chapter 3 Cont.](#chapter-3-cont)
+   * [Session 5 - February 3](#session-5---february-3)
+   * [Session 6 - February 8](#session-6---february-8)
+      * [Chapter 4 - Mutability](#chapter-4---mutability)
+   * [Session 7 - February 10](#session-7---february-10)
+   * [TERMS](#terms)
 
-<!-- Added by: shermanm, at: Tue Feb  8 16:47:57 EST 2022 -->
+<!-- Added by: shermanm, at: Tue Feb 15 09:01:26 EST 2022 -->
 
 <!--te-->
 # Instructions
