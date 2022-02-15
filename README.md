@@ -15,8 +15,10 @@ These are the notes from a directed study course in "Advanced Programming," writ
       * [Chapter 2 - Program Structure](#chapter-2---program-structure)
    * [Session 3 - January 27](#session-3---january-27)
       * [Chapter 3 - Functions](#chapter-3---functions)
+   * [Session 4 - February 1](#session-4---february-1)
+      * [Chapter 3 Cont.](#chapter-3-cont)
 
-<!-- Added by: shermanm, at: Tue Feb  1 16:58:13 EST 2022 -->
+<!-- Added by: shermanm, at: Tue Feb  8 16:47:57 EST 2022 -->
 
 <!--te-->
 # Instructions
@@ -126,6 +128,7 @@ We went over some of chapter 3 and worked on environment diagrams
 * Environment diagrams or memory diagrams 
 	* when you make a binding it re-assigna the value as the old one gets deleted  
 	* everything without an arrow back to the global will get deleted 
+
 # Session 4 - February 1 
 ## Chapter 3 Cont. 
 * Arrow function 
@@ -171,7 +174,11 @@ We went over some of chapter 3 and worked on environment diagrams
 	* If you start out with different coins, to make one dollar, the combination of change will vary 
 	* This represents recursion, as different decisions are being made, and all of them play out to solution 
 * Recursion is seen in GPS systems and classical AI trainings 
-# Session 5 - February 8 
+
+
+# Session 5 - February 3
+
+# Session 6 - February 8
 ## Chapter 4 - Mutability 
 * every value is mutable 
 * mutable = changeable, maluable, moveable 
@@ -201,7 +208,31 @@ We went over some of chapter 3 and worked on environment diagrams
 * communication between nodes is the hardest part 
 * parallelization is useful in hardware failure and if you need to reboot/ update a node 
 * node: a server/ computer 
-## February 10 
+
+Closures demonstration code:
+```JavaScript
+function setup() {
+  createCanvas(400, 400);
+  
+  
+  let makeMultiplier = function (n) {
+    return function (b) {
+      return b * n;
+    }
+  }
+  
+  let tripler = makeMultiplier(3);
+  
+  print(tripler(2));
+  print(tripler(5));
+  
+  let quad = makeMultiplier(4);
+  
+  print(quad(2));
+}
+```
+
+# Session 7 - February 10 
 * Arrays: reduce, map, filter 
 * reduce (higher order procedure): to accumulate all of the items in an array together
 	* syntax: array name . reduce((total, num), start value)
@@ -217,7 +248,9 @@ We went over some of chapter 3 and worked on environment diagrams
 	* needs to test to decide whether to keep or ignore, makes things into a boolean 
 	* syntax: array name . filter((x) => parameters of what variables you want included) 
 * When reduce, map, and filter are used altogether, they help multiple things happen at once 
-# TERMS 
+
+# TERMS
+
 * Paradigm: classes of language concepts and features that usually revolve around a central philosophy, an organizational tool to understand a collection of features 
 * Functional Programming: (applicative) functions are "first-class" data type, passed as arguments and returned 
 * Object-Oriented Programming: all code is organized into objects 
