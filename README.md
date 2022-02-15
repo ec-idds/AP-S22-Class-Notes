@@ -256,22 +256,22 @@ function setup() {
 
 # TERMS
 
-* Paradigm: classes of language concepts and features that usually revolve around a central philosophy, an organizational tool to understand a collection of features 
-* Functional Programming: (applicative) functions are "first-class" data type, passed as arguments and returned 
-* Object-Oriented Programming: all code is organized into objects 
+* Arguments: values given to functions 
+* Binding: creation of a variable to its value, = can be used to assign new values to a binding 
 * Bits: any kind of two-value things, usually described as 1s and 0s 
-* Values: chunks of bits ex. numbers, text, functions
-* Overflow: end up with a number that did not fit into the given number of bits 
-* Operators: +, *, -, /, %, >, <, >=, <=, ==, !=, &&, ||, ! 
-* Unicode standard: assigns a number to virtually every character you would ever need 
 * Boolean: which has just two values, true and false 
-* Null and Undefined: denote the absence of meaningful value 
+* Environment: collection of bindings and their values that exist at a given time 
 * Expression: fragment of code that produces a value 
+* Function: piece of program wrapped in a value, have a set of parameters and a body, which maintains the statements to execute 
+* Functional Programming: (applicative) functions are "first-class" data type, passed as arguments and returned 
 * JS statement: full statement, compilation of expressions 
+* Null and Undefined: denote the absence of meaningful value 
+* Object-Oriented Programming: all code is organized into objects 
+* Operators: +, *, -, /, %, >, <, >=, <=, ==, !=, &&, ||, ! 
+* Overflow: end up with a number that did not fit into the given number of bits 
+* Paradigm: classes of language concepts and features that usually revolve around a central philosophy, an organizational tool to understand a collection of features 
 * Program: list of statments 
 * Side effects: values of expressions that do not change the world 
+* Unicode standard: assigns a number to virtually every character you would ever need 
+* Values: chunks of bits ex. numbers, text, functions
 * Variable: catches and holds values 
-* Binding: creation of a variable to its value, = can be used to assign new values to a binding 
-* Environment: collection of bindings and their values that exist at a given time 
-* Function: piece of program wrapped in a value, have a set of parameters and a body, which maintains the statements to execute 
-* Arguments: values given to functions 
