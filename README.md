@@ -108,7 +108,31 @@ These notes are the highlights, focusing on what is new information beyond what 
 		* Charles Babbage
 	* Grace Hopper's literal "bug"
 	* Alan Turing
-
+* structure 
+	* bindings - giving a name to a value 
+	* let, var, const (binding operators) 
+	* sub expressions -> decided value -> bound 
+	* binds variable to result of the expression 
+* garbage collector will come and clean up things (data) that are no longer being used
+	* imperative to functional programming 
+	* garbage collector makes things dynamic, so you do not need to be deleting things yourself 
+* environment 
+	* collection of bindings 
+	* all functions that can be run
+	* all different values that can be bound to that data
+	* defines how we organize the code 
+* functions 
+	* defined with function as a keyword, it can be called, and applied/ invoked (defined and applied) 
+	* console.long = print()
+* every expression returns a value
+* if nothing is returned, it returns undefined 
+* side effect- anything a function does that is not reflected in the output 
+* control flow
+	* 1. rules are intuitive 
+	* 2. largely universal 
+	* "if" is a big control tool 
+	* keyword "break" breaks you out of a "for" loop 
+* Starship Troopers by Robert A Hynlind 
 # Session 3 - January 27
 
 We went over some of chapter 3 and worked on environment diagrams
@@ -248,6 +272,56 @@ function setup() {
 	* needs to test to decide whether to keep or ignore, makes things into a boolean 
 	* syntax: array name . filter((x) => parameters of what variables you want included) 
 * When reduce, map, and filter are used altogether, they help multiple things happen at once 
+# Session 8 - February 15
+* practiced reduce, map, and filter on codio 
+# Session 9 - February 17 
+* Objects 
+	* overloaded words- multi definition, similar in vibe, mechanically different 
+	* multiparadigm = multiple definitions 
+	* entirely abstract, anything can be object a thing 
+* Object oriented programming - way to divide program into objects, ways to organize programs as you develop them 
+	* program is now a collect of objects that can talk to each other 
+	* an individual object is responsible for its own code and its own parameters 
+	* state variables should only be acquired to their objects 
+	* objects have an internal state and internal code 
+	* you can only access the states of code through reaching through accessories 
+	* can create modules that work as interfaces 
+	* responsible for managing its own state 
+	* objects like reusable pieces 
+	* the program can be local to the object and when outside that object you don't care how it works within the object 
+* method, procedure, and function 
+	* method: gets its content from the object it belongs to 
+	* function in JS: technically a procedure - gets context from environment 
+* Public vs. Private
+	* 1. public- interfaces you can see outside of the object (what is on the menu)
+	* 2. private- not accessible from outside, internal use only (what is behind the bar) 
+* accessors: functions used to access private parts of the object 
+	* JS cannot distinguish between the two 
+	* used as a convention (ex. camelCase), as something used for humans to communicate, is an addition away from what the code does vs. actually means 
+	* convention in JS/python= if something is an object you can name it with an underscore __ to make symbolize it is private 
+	* if you accidently access it publicly, it will mess with the state, and the state will go inconsistent (BAD) 
+	* in order to not have the state go inconsistent, you must USE ACCESSOR functions 
+* objects oriented protects your state 
+	* less severe, because you still feel consequences of direct mutation 
+	* not actually changing, object changes it to maintain state, protects data from being 1/2 way processed when called 
+* enforcing private vs private is based on honor system 
+* methods: projects that hold function values 
+* objects syntax: properties
+	* object  
+	* propertyName: propertyValue, 
+	* propertyTwo: value2, 
+* objects have their own little frame, and bindings to values 
+* if you assign soemthing that doesn't exist, JS will make it exist in the object, making it easy to grow an object through many stages 
+* ${line} only works with `` back tics, making it easy to change what a string says in the code 
+* "this." refers to the object you are IN, how you get to properties of the object you are in 
+	* when you are in an object, you do not necessarily know what it is named 
+	* objects like functions don't necessarily have names 
+	* it also does not know its name as it can change 
+	* using this. is safer, as there is less searching in the environment, as the computer will never look for a new "this" 
+	* => will use the bindings of wherever you already are 
+	* every function in JS has a ".call", if you want to call that function with a different this. or in a different environment 
+	* => adds this. to the frame its already in, how it is mechanically different from function 
+* NOTES FOR FUTURE CLASS: skip speak.call* - just confusing, skip prototypes 
 
 # TERMS
 
