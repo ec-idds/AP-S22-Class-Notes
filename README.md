@@ -322,6 +322,46 @@ function setup() {
 	* every function in JS has a ".call", if you want to call that function with a different this. or in a different environment 
 	* => adds this. to the frame its already in, how it is mechanically different from function 
 * NOTES FOR FUTURE CLASS: skip speak.call* - just confusing, skip prototypes 
+# Session 10 - March 1
+* Object Oriented Classes and Inheritance 
+	* objects: a way to modularize code/ programs/ state 
+	* changes data as the program runs 
+	* objects are stateful, hold data, that data can change is is mutable 
+	* still not mutable globals 
+	* code in the form of "methods"
+	* obj.method() = method is a function that lives within that object 
+	* class: template of a specific kind of object 
+	* Instantiate: to make an instance of, an individual copy of a thing, using the blueprint for that object 
+* Object syntax blueprint 
+	* object classes are capitalized 
+	* class of a car: 
+		* var name 
+		* var year 
+		* var make 
+		* Method: startCar 
+		* Method: stopCar 
+	* All objects within this class will have the above listed properties 
+* Instantiation: creates space in active memory for all stuff described in the class
+* A class is not an object, it is a template to create objects 
+* to define a class you need to have a function called "constructor ()" 
+* Constructor()
+	* is where you give it the data to put into its stuff 
+	* keyword "new" = instantiates a class into an object 
+	* class constructors MUST be invoked within "new" 
+	* with the class defined, making new ones is easy 
+	* more organized and controlled way to make objects 
+* Can get at things within an object using .dot operator 
+* only thing you can put in the classes are methods 
+* EX. 
+	* let car = variable 
+	* class Car = class 
+	* let myCar = new Car('fiat', 2018) 
+	* new constructs a new object that the function is owed to
+	* "myCar" is in the global frame 
+	* "fiat", "2018", and "Date" are placed within the object frame
+	* "name: fiat", "year: 2018", "this.name: name" are made in the constructor frame, which will be disposed of by the garbage collector 
+	* newDate() = instance when new operator is called 
+	* adding stuff to this argument that was not initially an argument  
 
 # TERMS
 
