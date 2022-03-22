@@ -362,6 +362,36 @@ function setup() {
 	* "name: fiat", "year: 2018", "this.name: name" are made in the constructor frame, which will be disposed of by the garbage collector 
 	* newDate() = instance when new operator is called 
 	* adding stuff to this argument that was not initially an argument  
+# Session 11 - March 15
+* Abstraction 
+	* Allow you to organize things, let you build things off of them 
+	* encapsulation: objects, code/data = one unit 
+	* encapsulation allows for "encryption" within an object 
+	* programming language then evolved from pure extraction to including checks and balances 
+	* the rules of programming are arbitrary, the rules will work if you stick to them
+	* coding rules are arbitrary but when you follow them it maintains order and functionality 
+* Objects 
+	* Inheritance: when you have a class, and you want to change it to be more specific to a purpose and create a subclass 
+	* A subclass has everything the parent class has (functions, methods, data templates) 
+	* classes are used to derive other classes 
+	* with subclasses you can change things in them without changing things within the parent class 
+	* this concept ^ allows you to create NEW objects with all the features of the parent classes and previous subclasses 
+	* classes are used a lot in GUIs 
+	* classes allow you to not have to reinvent the wheel each time, different purpose similar structure 
+	* classes allow you to maintain compatible features (ex. draw) 
+	* can go the opposite way too and provide a more generic template to build off of 
+* Jitterbug 
+	* change the layout from using object orientation to classes 
+	* use the "New" keyword to instantiate a new bug 
+	* keyword "Extends" makes a new subclass 
+* Example 
+	* driver bug implements jitterbug 
+	* everything new you define, and everything the parent class had 
+	* 1. no reiventing the wheel
+	* 2. build systems and frameworks of code 
+	* need things to be able to interact with other stuff 
+	* provide objects that you can sub class to organize 
+	* Java- forces OO, "embarrasingly" enforces it 
 
 # TERMS
 
