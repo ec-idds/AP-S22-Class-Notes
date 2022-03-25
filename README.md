@@ -392,6 +392,131 @@ function setup() {
 	* need things to be able to interact with other stuff 
 	* provide objects that you can sub class to organize 
 	* Java- forces OO, "embarrasingly" enforces it 
+## PYTHON NOTES BEGIN 
+# Session 12- March 22 
+* Differences in syntax and structure between JavaScript and Python 
+* Data types always matter, Python is more strict 
+* everything in python is an object 
+* there are objects of different types 
+* the type of an object defines how you can interact with it 
+* 2 main categories: Scalar and Non-Scalar 
+* Scalar: just a value with no structure, ex. integers, floats(decimal points), scientific notation, 
+* Non-Scalar: has some internal structure, strings, arrays, classes
+* In JS all numbers are floats, which have rounding error 
+* Basic Operators 
+	* These operations are all the same + , - , * , / 
+	* "//" computes integer division, but if there is a remainder then it ignores it 
+	* "%" modulus, does integer division and gives the remainder 
+	* "a ** b" expect a^b exponents 
+	* uses "and" "or" "not" 
+	* n = 5, assigns 
+	* n == 5, creates a boolean operation of T/F 
+	* variable bindings are the same 
+* Branching 
+	* syntax of an if statement: 
+	* if ( x > y) 
+		* block 
+		* of 
+		* code 
+	* else 
+		* other 
+		* block 
+		* code 
+	* if x % 2 == 0
+		* print('even') 
+	* if x % 3 == 0
+		* print('div 2') 
+	* else: 
+		* print ('divisible by 2 and 3') 
+* In JavaScript if statements 
+	* If ()
+		* code
+	* else If ()
+		* code
+	* else ()
+		* code  
+* if you have a bunch of different conditions to test on one thing
+* In Python: "else if" is elif 
+* Nesting in python 
+	* one indent to two indents the further you nest 
+* Function scoping
+	* how to define a function 
+	* uses keyword "def" 
+* Example
+	* def maxVal (x, y): 
+		* indented body 
+		* if x > y : 
+			* return x
+		* else: 
+			* return y 
+* ":" starts the body 
+* "return" stops a program, to replace a value with that function via substitution 
+* none is a value like true or false, which is capitilzed in python, True or False 
+* Scoping 
+	* files end in .py 
+	* function has to be defined in order to call it 
+	* comments are made with "#" 
+	* when in any function, if you have "name = " it is considered to be a local variable 
+	* if there is no variable locally defined, it goes to global scope to find a value 
+	* if you assign a name in a function body then it is automatically a local variable 
+	* closed scope doesn't really work in python, declaration is implicit 
+# Session 13 - March 24 
+* Strings 
+	* s = ' a, b, c, d' 
+	* no built in .length, need len(s) to get the length of a string 
+	* s[2] results in c, you can access like an array, good for manipulation 
+	* slicing: s[1:3] = bc, slices at the spaces not at the values of the indices 
+	* common slicing techniques 
+		* s[0] = beginning 
+		* s[1] = takes first thing off 
+		* s[:-2] = starts from the end and counts backwards 
+		* s[1:-1] = removes beginning and last item 
+* Tuples 
+	* like an array but immutable 
+	* example ( 2, 4, 6, 8) 
+	* if you want to change it you produce a new one with the changes applied 
+	* index: t[0] -> 2
+	* sliced: t[ 1: -1] -> (4, 6) 
+	* cannot change assignments: t[0] = 5 X CANNOT DO X as it breaks immutability 
+	* tuple of one item ('a',) you need a comma to represent it as a tuple  
+* New stuff with functions 
+	* x, y = func() <- can return more than one thing 
+	* def func():
+		* return 3, 4 <- returned as a tuple 
+	* x would become 3, y would become 4 
+	* known as "deconstructing" or returning some kind of structure 
+	* a, b ('2', "y") can be of any items 
+	* helpful to use for coordinates 
+* Ranges 
+	* help with iterations 
+* In javaScript 
+	* for ( let i = 0; i < 10; i++) {
+		* console.log (i); 
+	* } 
+* In python 
+	* for i in range (10): 
+		* print (i) 
+* range(start, stop, step) 
+* if you only give the range one item, it goes to default start and step of 0 and 1 
+* step can be negative and it can count down 
+* range returns range type, generates numbers on demand when it needs it 
+* range is used in for loops as it asks for the information from range 
+* range is iterable 
+* an array is iterable but all the information is in it to begin with, range has no length, values in it are generated in real time
+* re-entrant function or generator = range 
+* sliceable and addressable cannot concat or be used in repetition 
+* concatination 
+	* ('a', 'b') + ('c', 'd') -> ('a','b','c','d') X not good
+	* 2* ('a', 'b') -> ('a','b','a','b') X not good 
+	* equals operator can compare ranges if they produce the same sequence of integers 
+	* anyuwhere you use a tuple or sequence, you can use a range to generate a sequence of numbers 
+* Lists 
+	* mutable 
+	* like javaScript array, but can be sliced 
+	* [] addressed like with brackets
+	* ex. [1,2,3,4] -> list, [1:3] -> slices [1] -> index of one 
+	* reason to use: if you will be programmatically adding onto it 
+	* most of the time lists are built incremently than literal 
 
 # TERMS
 
@@ -414,3 +539,5 @@ function setup() {
 * Environment: collection of bindings and their values that exist at a given time 
 * Function: piece of program wrapped in a value, have a set of parameters and a body, which maintains the statements to execute 
 * Arguments: values given to functions 
+PYTHON
+* Floats: when you have a decimal point in the number and it can be anywhere in the number 
