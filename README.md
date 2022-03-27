@@ -21,9 +21,16 @@ These are the notes from a directed study course in "Advanced Programming," writ
    * [Session 6 - February 8](#session-6---february-8)
       * [Chapter 4 - Mutability](#chapter-4---mutability)
    * [Session 7 - February 10](#session-7---february-10)
+   * [Session 8 - February 15](#session-8---february-15)
+   * [Session 9 - February 17](#session-9---february-17)
+   * [Session 10 - March 1](#session-10---march-1)
+   * [Session 11 - March 15](#session-11---march-15)
+      * [PYTHON NOTES BEGIN](#python-notes-begin)
+   * [Session 12- March 22](#session-12--march-22)
+   * [Session 13 - March 24](#session-13---march-24)
    * [TERMS](#terms)
 
-<!-- Added by: shermanm, at: Tue Feb 15 09:01:26 EST 2022 -->
+<!-- Added by: shermanm, at: Sun Mar 27 14:59:45 EDT 2022 -->
 
 <!--te-->
 # Instructions
