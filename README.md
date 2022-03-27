@@ -113,7 +113,31 @@ These notes are the highlights, focusing on what is new information beyond what 
 		* Charles Babbage
 	* Grace Hopper's literal "bug"
 	* Alan Turing
-
+* structure 
+	* bindings - giving a name to a value 
+	* let, var, const (binding operators) 
+	* sub expressions -> decided value -> bound 
+	* binds variable to result of the expression 
+* garbage collector will come and clean up things (data) that are no longer being used
+	* imperative to functional programming 
+	* garbage collector makes things dynamic, so you do not need to be deleting things yourself 
+* environment 
+	* collection of bindings 
+	* all functions that can be run
+	* all different values that can be bound to that data
+	* defines how we organize the code 
+* functions 
+	* defined with function as a keyword, it can be called, and applied/ invoked (defined and applied) 
+	* console.long = print()
+* every expression returns a value
+* if nothing is returned, it returns undefined 
+* side effect- anything a function does that is not reflected in the output 
+* control flow
+	* 1. rules are intuitive 
+	* 2. largely universal 
+	* "if" is a big control tool 
+	* keyword "break" breaks you out of a "for" loop 
+* Starship Troopers by Robert A Hynlind 
 # Session 3 - January 27
 
 We went over some of chapter 3 and worked on environment diagrams
@@ -253,6 +277,251 @@ function setup() {
 	* needs to test to decide whether to keep or ignore, makes things into a boolean 
 	* syntax: array name . filter((x) => parameters of what variables you want included) 
 * When reduce, map, and filter are used altogether, they help multiple things happen at once 
+# Session 8 - February 15
+* practiced reduce, map, and filter on codio 
+# Session 9 - February 17 
+* Objects 
+	* overloaded words- multi definition, similar in vibe, mechanically different 
+	* multiparadigm = multiple definitions 
+	* entirely abstract, anything can be object a thing 
+* Object oriented programming - way to divide program into objects, ways to organize programs as you develop them 
+	* program is now a collect of objects that can talk to each other 
+	* an individual object is responsible for its own code and its own parameters 
+	* state variables should only be acquired to their objects 
+	* objects have an internal state and internal code 
+	* you can only access the states of code through reaching through accessories 
+	* can create modules that work as interfaces 
+	* responsible for managing its own state 
+	* objects like reusable pieces 
+	* the program can be local to the object and when outside that object you don't care how it works within the object 
+* method, procedure, and function 
+	* method: gets its content from the object it belongs to 
+	* function in JS: technically a procedure - gets context from environment 
+* Public vs. Private
+	* 1. public- interfaces you can see outside of the object (what is on the menu)
+	* 2. private- not accessible from outside, internal use only (what is behind the bar) 
+* accessors: functions used to access private parts of the object 
+	* JS cannot distinguish between the two 
+	* used as a convention (ex. camelCase), as something used for humans to communicate, is an addition away from what the code does vs. actually means 
+	* convention in JS/python= if something is an object you can name it with an underscore __ to make symbolize it is private 
+	* if you accidently access it publicly, it will mess with the state, and the state will go inconsistent (BAD) 
+	* in order to not have the state go inconsistent, you must USE ACCESSOR functions 
+* objects oriented protects your state 
+	* less severe, because you still feel consequences of direct mutation 
+	* not actually changing, object changes it to maintain state, protects data from being 1/2 way processed when called 
+* enforcing private vs private is based on honor system 
+* methods: projects that hold function values 
+* objects syntax: properties
+	* object  
+	* propertyName: propertyValue, 
+	* propertyTwo: value2, 
+* objects have their own little frame, and bindings to values 
+* if you assign soemthing that doesn't exist, JS will make it exist in the object, making it easy to grow an object through many stages 
+* ${line} only works with `` back tics, making it easy to change what a string says in the code 
+* "this." refers to the object you are IN, how you get to properties of the object you are in 
+	* when you are in an object, you do not necessarily know what it is named 
+	* objects like functions don't necessarily have names 
+	* it also does not know its name as it can change 
+	* using this. is safer, as there is less searching in the environment, as the computer will never look for a new "this" 
+	* => will use the bindings of wherever you already are 
+	* every function in JS has a ".call", if you want to call that function with a different this. or in a different environment 
+	* => adds this. to the frame its already in, how it is mechanically different from function 
+* NOTES FOR FUTURE CLASS: skip speak.call* - just confusing, skip prototypes 
+# Session 10 - March 1
+* Object Oriented Classes and Inheritance 
+	* objects: a way to modularize code/ programs/ state 
+	* changes data as the program runs 
+	* objects are stateful, hold data, that data can change is is mutable 
+	* still not mutable globals 
+	* code in the form of "methods"
+	* obj.method() = method is a function that lives within that object 
+	* class: template of a specific kind of object 
+	* Instantiate: to make an instance of, an individual copy of a thing, using the blueprint for that object 
+* Object syntax blueprint 
+	* object classes are capitalized 
+	* class of a car: 
+		* var name 
+		* var year 
+		* var make 
+		* Method: startCar 
+		* Method: stopCar 
+	* All objects within this class will have the above listed properties 
+* Instantiation: creates space in active memory for all stuff described in the class
+* A class is not an object, it is a template to create objects 
+* to define a class you need to have a function called "constructor ()" 
+* Constructor()
+	* is where you give it the data to put into its stuff 
+	* keyword "new" = instantiates a class into an object 
+	* class constructors MUST be invoked within "new" 
+	* with the class defined, making new ones is easy 
+	* more organized and controlled way to make objects 
+* Can get at things within an object using .dot operator 
+* only thing you can put in the classes are methods 
+* EX. 
+	* let car = variable 
+	* class Car = class 
+	* let myCar = new Car('fiat', 2018) 
+	* new constructs a new object that the function is owed to
+	* "myCar" is in the global frame 
+	* "fiat", "2018", and "Date" are placed within the object frame
+	* "name: fiat", "year: 2018", "this.name: name" are made in the constructor frame, which will be disposed of by the garbage collector 
+	* newDate() = instance when new operator is called 
+	* adding stuff to this argument that was not initially an argument  
+# Session 11 - March 15
+* Abstraction 
+	* Allow you to organize things, let you build things off of them 
+	* encapsulation: objects, code/data = one unit 
+	* encapsulation allows for "encryption" within an object 
+	* programming language then evolved from pure extraction to including checks and balances 
+	* the rules of programming are arbitrary, the rules will work if you stick to them
+	* coding rules are arbitrary but when you follow them it maintains order and functionality 
+* Objects 
+	* Inheritance: when you have a class, and you want to change it to be more specific to a purpose and create a subclass 
+	* A subclass has everything the parent class has (functions, methods, data templates) 
+	* classes are used to derive other classes 
+	* with subclasses you can change things in them without changing things within the parent class 
+	* this concept ^ allows you to create NEW objects with all the features of the parent classes and previous subclasses 
+	* classes are used a lot in GUIs 
+	* classes allow you to not have to reinvent the wheel each time, different purpose similar structure 
+	* classes allow you to maintain compatible features (ex. draw) 
+	* can go the opposite way too and provide a more generic template to build off of 
+* Jitterbug 
+	* change the layout from using object orientation to classes 
+	* use the "New" keyword to instantiate a new bug 
+	* keyword "Extends" makes a new subclass 
+* Example 
+	* driver bug implements jitterbug 
+	* everything new you define, and everything the parent class had 
+	* 1. no reiventing the wheel
+	* 2. build systems and frameworks of code 
+	* need things to be able to interact with other stuff 
+	* provide objects that you can sub class to organize 
+	* Java- forces OO, "embarrasingly" enforces it 
+## PYTHON NOTES BEGIN 
+# Session 12- March 22 
+* Differences in syntax and structure between JavaScript and Python 
+* Data types always matter, Python is more strict 
+* everything in python is an object 
+* there are objects of different types 
+* the type of an object defines how you can interact with it 
+* 2 main categories: Scalar and Non-Scalar 
+* Scalar: just a value with no structure, ex. integers, floats(decimal points), scientific notation, 
+* Non-Scalar: has some internal structure, strings, arrays, classes
+* In JS all numbers are floats, which have rounding error 
+* Basic Operators 
+	* These operations are all the same + , - , * , / 
+	* "//" computes integer division, but if there is a remainder then it ignores it 
+	* "%" modulus, does integer division and gives the remainder 
+	* "a ** b" expect a^b exponents 
+	* uses "and" "or" "not" 
+	* n = 5, assigns 
+	* n == 5, creates a boolean operation of T/F 
+	* variable bindings are the same 
+* Branching 
+	* syntax of an if statement: 
+	* if ( x > y) 
+		* block 
+		* of 
+		* code 
+	* else 
+		* other 
+		* block 
+		* code 
+	* if x % 2 == 0
+		* print('even') 
+	* if x % 3 == 0
+		* print('div 2') 
+	* else: 
+		* print ('divisible by 2 and 3') 
+* In JavaScript if statements 
+	* If ()
+		* code
+	* else If ()
+		* code
+	* else ()
+		* code  
+* if you have a bunch of different conditions to test on one thing
+* In Python: "else if" is elif 
+* Nesting in python 
+	* one indent to two indents the further you nest 
+* Function scoping
+	* how to define a function 
+	* uses keyword "def" 
+* Example
+	* def maxVal (x, y): 
+		* indented body 
+		* if x > y : 
+			* return x
+		* else: 
+			* return y 
+* ":" starts the body 
+* "return" stops a program, to replace a value with that function via substitution 
+* none is a value like true or false, which is capitilzed in python, True or False 
+* Scoping 
+	* files end in .py 
+	* function has to be defined in order to call it 
+	* comments are made with "#" 
+	* when in any function, if you have "name = " it is considered to be a local variable 
+	* if there is no variable locally defined, it goes to global scope to find a value 
+	* if you assign a name in a function body then it is automatically a local variable 
+	* closed scope doesn't really work in python, declaration is implicit 
+# Session 13 - March 24 
+* Strings 
+	* s = ' a, b, c, d' 
+	* no built in .length, need len(s) to get the length of a string 
+	* s[2] results in c, you can access like an array, good for manipulation 
+	* slicing: s[1:3] = bc, slices at the spaces not at the values of the indices 
+	* common slicing techniques 
+		* s[0] = beginning 
+		* s[1] = takes first thing off 
+		* s[:-2] = starts from the end and counts backwards 
+		* s[1:-1] = removes beginning and last item 
+* Tuples 
+	* like an array but immutable 
+	* example ( 2, 4, 6, 8) 
+	* if you want to change it you produce a new one with the changes applied 
+	* index: t[0] -> 2
+	* sliced: t[ 1: -1] -> (4, 6) 
+	* cannot change assignments: t[0] = 5 X CANNOT DO X as it breaks immutability 
+	* tuple of one item ('a',) you need a comma to represent it as a tuple  
+* New stuff with functions 
+	* x, y = func() <- can return more than one thing 
+	* def func():
+		* return 3, 4 <- returned as a tuple 
+	* x would become 3, y would become 4 
+	* known as "deconstructing" or returning some kind of structure 
+	* a, b ('2', "y") can be of any items 
+	* helpful to use for coordinates 
+* Ranges 
+	* help with iterations 
+* In javaScript 
+	* for ( let i = 0; i < 10; i++) {
+		* console.log (i); 
+	* } 
+* In python 
+	* for i in range (10): 
+		* print (i) 
+* range(start, stop, step) 
+* if you only give the range one item, it goes to default start and step of 0 and 1 
+* step can be negative and it can count down 
+* range returns range type, generates numbers on demand when it needs it 
+* range is used in for loops as it asks for the information from range 
+* range is iterable 
+* an array is iterable but all the information is in it to begin with, range has no length, values in it are generated in real time
+* re-entrant function or generator = range 
+* sliceable and addressable cannot concat or be used in repetition 
+* concatination 
+	* ('a', 'b') + ('c', 'd') -> ('a','b','c','d') X not good
+	* 2* ('a', 'b') -> ('a','b','a','b') X not good 
+	* equals operator can compare ranges if they produce the same sequence of integers 
+	* anyuwhere you use a tuple or sequence, you can use a range to generate a sequence of numbers 
+* Lists 
+	* mutable 
+	* like javaScript array, but can be sliced 
+	* [] addressed like with brackets
+	* ex. [1,2,3,4] -> list, [1:3] -> slices [1] -> index of one 
+	* reason to use: if you will be programmatically adding onto it 
+	* most of the time lists are built incremently than literal 
 
 # TERMS
 
@@ -275,3 +544,9 @@ function setup() {
 * Unicode standard: assigns a number to virtually every character you would ever need 
 * Values: chunks of bits ex. numbers, text, functions
 * Variable: catches and holds values 
+* Binding: creation of a variable to its value, = can be used to assign new values to a binding 
+* Environment: collection of bindings and their values that exist at a given time 
+* Function: piece of program wrapped in a value, have a set of parameters and a body, which maintains the statements to execute 
+* Arguments: values given to functions 
+PYTHON
+* Floats: when you have a decimal point in the number and it can be anywhere in the number 
