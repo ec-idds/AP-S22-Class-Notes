@@ -529,7 +529,45 @@ function setup() {
 	* ex. [1,2,3,4] -> list, [1:3] -> slices [1] -> index of one 
 	* reason to use: if you will be programmatically adding onto it 
 	* most of the time lists are built incremently than literal 
-
+# Session 14- March 31
+* keywords to know 
+	* "pass"- do nothing on purpose, used for empty blocks signifying an empty block for the code to pass over 
+	* "input" - give it a prompt and it will prompt the user on the screen, and it will return what the user places in the input prompt 
+* testing for equality 
+	* how do you know two things are 1.) of equal value or 2.) the same thing? 
+* Example 
+	* schools --> ["emmanuel", "simmons"] 
+	* north_schools --> ["MIT", "Harvard"] 
+	* Boston_Schools = [schools, north_schools] 
+	* Boston_2 = [["emmanuel", "simmons"], ["MIT", "Harvard"]] 
+	* Boston_schools == Boston_2 ? yes, as the values are equal, making this statement true 
+	* schools [0] == Boston_schools [0][0] = same value equality 
+	* Boston_2[0] == Boston_schools[0] = equal value, NOT the same object 
+	* id(schools[0] == id(Boston_schools[0][0] = same object check 
+* if you have 2 separate objects, but they contain the same stuff, then python will return true 
+* python will also check to see if the the same actual object is being pointed at, rather than merely having the same value 
+* this process is needed for object orientation, when you manipulate one variable, it will change in all the other spots that the variable is in the code 
+* List Comprehension 
+	* DO NOT change lists that you are iterating through
+	* DO NOT mutate stuff that you are using as a control 
+* MAP 
+	* creates a new list when you are done with it
+	* easy way to build lists and make pretty code 
+* Example
+	* my_list = [1,2,3]
+	* double_list = [ n * 2 for n in my_list] 
+	* double_list == [2,4,6] 
+	* [<var> for <var> in <list>] = map(print(i for i in my_list)) 
+* Isinstance (filter) 
+	* tells you what "type" something is 
+* Example 
+	* [ x for x in "list name" if (any boolean)] = picks out certain items that meet the boolean 
+	* you can add " == false" on the end of the boolean to get the opposite stuff 
+* filter comes before the map function 
+* python lambda can only be one expression long 
+	* my_list = map(lambda x: x ** 2, my_list) 
+		* print(list(my_list)) 
+	
 # TERMS
 
 * Arguments: values given to functions 
