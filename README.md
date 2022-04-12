@@ -28,9 +28,10 @@ These are the notes from a directed study course in "Advanced Programming," writ
       * [PYTHON NOTES BEGIN](#python-notes-begin)
    * [Session 12- March 22](#session-12--march-22)
    * [Session 13 - March 24](#session-13---march-24)
+   * [Session 14- March 31](#session-14--march-31)
    * [TERMS](#terms)
 
-<!-- Added by: shermanm, at: Sun Mar 27 14:59:45 EDT 2022 -->
+<!-- Added by: shermanm, at: Tue Apr 12 15:39:23 EDT 2022 -->
 
 <!--te-->
 # Instructions
