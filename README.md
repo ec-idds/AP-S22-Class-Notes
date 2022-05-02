@@ -568,6 +568,65 @@ function setup() {
 * python lambda can only be one expression long 
 	* my_list = map(lambda x: x ** 2, my_list) 
 		* print(list(my_list)) 
+# Session 15- April 12th 
+* Dictionaries 
+	* similar to JavaScript objects 
+	* uses key word "dict" 
+	* syntax: d = { key: value } and the key needs to be a hashable type 
+	* [] index operator to get a value, use a key 
+	* dictionaries are mutable 
+	* you can add to existing dictionaries 
+	* ex. d [name] = mark --> creates the value of name in memory, can be read as is name "in" dictionary d? 
+	* if this value already exists, and you readdress it, it will be written over 
+	* len () works on dictionaries 
+	* d.get ('name', 'not found') d.get will return name, if name is not in the dictionary then 'not found' will come up 
+	* del d[key] = deletes the item with that key name 
+	* keys can be any type that is inherently immutable, should be primative 
+* for k in d:
+	* print('key'; , k) = keys 
+	* print('value';, d[k]) = values at certain keys 
+* dictionary comprehensions 
+	* {K:K * 3 for K in range(3)} 
+	* 'K:K * 3' changes the value output by multiplying by three 
+	* 'K in range(3)' goes through the range 
+* Classes and Objects 
+	* abstract data type 
+	* data made up of other data types 
+	* only way to get to the data from within objects is through methods of that object (interface) 
+	* you don't care what is happening within the object when you are outside of the object 
+* Object syntax 
+	* class is still defined abstractly 
+	* then you can substitute that class into an object you can use 
+* syntax 
+	* class "name" (parent object) 
+	* everything in python is a subset of "object" 
+	* " " doc string, official name for what the code is talking about 
+	* the very top doc string describes the file 
+	* the very top class describes the class 
+	* doc strings need to be at the very top of the file, or else you would just use a comment 
+	* doc strings go to the other side of the abstraction barrier, as this is what the user sees 
+	* def == define methods 
+	* def__init__ (object) --> works like the constructor in JavaScript
+	* use of double underscores 
+	* def__str__ (object) --> tells hit how to do something 
+* example 
+	* objectName.something 
+	* create instance 
+	* s= IntSet() --> none of class
+	* constructor does not have to start with no information 
+	* Init makes sure you start in a sane state 
+	* __lt__ = less than 
+* Inheritance 
+	* if you inherit from object, then you are at the top
+	* supports inheritance from more than one super class 
+	* point of subclasses is to add on from the parent class 
+	* "try & except" adds more nformation to the error, tells you what the error means 
+	* [:] slicing operator retunrs the whole list, but only a copy of the list 
+	* not of equal object value 
+* Encapsulation 
+	* bounding tuff together into units 
+	* information hiding-- intentionally hiding abstractions so you can focus on one abstraction at a time
+	* spaghetti code= unorganzies practice of objects, bug prone, immutable, adds bugs! STAY AWAY 
 	
 # TERMS
 
